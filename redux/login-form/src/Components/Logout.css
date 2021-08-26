@@ -6,16 +6,23 @@
   height: 100vh;
 }
 
+h1{
+  font-size: 28px;
+  font-style: italic;
+}
 .logout__button {
-  min-width: 300px;
+  min-width: 200px;
   padding: 17px 30px;
   margin-top: 20px;
   border: none;
   color: #fff;
   font-size: 20px;
   background-color: black;
+  cursor: pointer;
 }
 
 .user__name {
   color: blueviolet;
+  font-size: 40px;
+  font-weight: 500;
 }
