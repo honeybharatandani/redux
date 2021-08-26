@@ -28,7 +28,7 @@ const Login = () => {
 
     return (
         <div className="login">
-            <form className="login__form" onSubmit={(e) => handleSubmit(e)} >
+            <form className="login__form" >
                 <h1>Login Here</h1>
                 <input
                     type="name"
@@ -51,7 +51,7 @@ const Login = () => {
 
                 />
 
-                <button type="submit" className="submit__btn">Submit</button>
+                <button type="submit" className="submit__btn" onSubmit={(e) => handleSubmit(e)}>Submit</button>
 
             </form>
              </div>
