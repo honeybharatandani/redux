@@ -28,18 +28,20 @@ const Login = () => {
 
     return (
         <div className="login">
-            <form className="login__form" >
+            <form className="login__form" onSubmit={(e) => handleSubmit(e)} >
                 <h1>Login Here</h1>
                 <input
                     type="name"
                     placeholder="Name"
                     value={name}
+                    required
                   onChange={(e)=> setName(e.target.value)}
                 />
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
+                    required
                     onChange={(e)=> setEmail(e.target.value)}
 
                 />
@@ -47,11 +49,12 @@ const Login = () => {
                     type="password"
                     placeholder="Password"
                     value={password}
+                    required
                     onChange={(e)=> setPassword(e.target.value)}
 
                 />
 
-                <button type="submit" className="submit__btn" onSubmit={(e) => handleSubmit(e)}>Submit</button>
+                <button type="submit" className="submit__btn">Submit</button>
 
             </form>
              </div>
